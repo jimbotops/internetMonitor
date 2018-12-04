@@ -14,7 +14,7 @@ processedFile = open(args.output, "w")
 
 # Split by Regex that matches this type of string - Mon 20 Aug 22:57:01 BST 2018
 # Remove the first element as this is just empty
-parsedArr = re.split('([A-z]{3} [0-9]{2} [A-z]{3} [0-9]{2}:[0-9]{2}:[0-9]{2} BST [0-9]{4})', rawFile.read())[1:]
+parsedArr = re.split('([A-z]{3}.{3} [A-z]{3} [0-9]{2}:[0-9]{2}:[0-9]{2} [A-z]{3} [0-9]{4})', rawFile.read())[1:]
 
 i=0
 while i < len(parsedArr)-1:
@@ -39,7 +39,7 @@ while i < len(parsedArr)-1:
     else:
         downloadValue = "0"
         uploadValue = "0"
-    print("Date:"+parsedArr[i]+"Download:" +downloadValue+"Upload:"+uploadValue)
+   # print("Date:"+parsedArr[i]+"Download:" +downloadValue+"Upload:"+uploadValue)
 
     # Write the data into the file in the format: dateTime, download, upload
     # This makes it really easy for parsing as it's in csv

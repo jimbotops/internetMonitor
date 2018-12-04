@@ -1,6 +1,6 @@
 # Internet Monitor
 
-This is the code to accompany the Medium post I wrote. The essence of which is below, but for full details go to Medium - 10 minute dev
+This is the code to accompany the Medium post I wrote. The essence of which is below, but for full details go to Medium - 10 minute dev. The original post is here: https://medium.com/@jimbotops_34097/10-minute-dev-internet-monitor-7c4d2c5f98f0
 
 # Intro 
 As with a lot of people, I get infuriated by ISPs selling you one speed only to receive half that, or less, by the time it gets to my router. As there never seemed to be any 'proof' on their side, I decided to create my own internet monitoring service, which logs your upload and download every minute and allows you to graph the results. There are sample input and output files provided in this repo.
